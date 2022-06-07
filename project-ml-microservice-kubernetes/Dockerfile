@@ -13,7 +13,7 @@ RUN pip install --upgrade pip &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
 
 ## Step 4:
-EXPOSE 80
+EXPOSE 8000
 
 ## Step 5:
 # Run app.py at container launch
