@@ -10,6 +10,12 @@ jobs:
     steps:
       - checkout
       # Download and cache dependencies
+      - run:
+          name: test
+          command: |
+            ls
+            pwd
+
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "requirements.txt" }}
